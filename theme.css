@@ -1,0 +1,14 @@
+body {
+  background: rgb(38, 41, 34);
+}
+
+.reveal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #FFF;
+}
+
+.reveal h1 {
+  text-transform: none;
+}
