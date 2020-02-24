@@ -2,7 +2,7 @@
 
 https://larshp.github.io/abap-in-the-wild/
 
-insert abstract here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Enter the lands of open source ABAP, discover new tools, learn how to survive the empty plains of continuous integration. We will guide you through the jungle, hopefully to discover the everlasting temple of ABAP.
 
 Open Source Summit SAP Germany 2020
 
