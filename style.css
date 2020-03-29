@@ -12,3 +12,15 @@ body {
 .reveal h1 {
   text-transform: none;
 }
+
+.reveal h2 {
+  text-transform: none;
+}
+
+.box-grass {
+  position: fixed;
+  bottom: 0px;
+  height: 60vh;
+  width: 100vw;
+  z-index: +10;
+}

@@ -3,19 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>ABAP in the wild!</title>
+  <title>ABAP in the wild!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js" integrity="sha256-MCvBrhCuX8GNt0gmv06kZ4jGIi1R2QNaSkadjRzinFs=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="ext/reveal.js-3.9.2/css/reveal.css">
-   <link rel="stylesheet" href="ext/reveal.js-3.9.2/css/theme/black.css">
-	<link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="ext/reveal.js-3.9.2/css/theme/black.css">
+	<link rel="stylesheet" href="style.css">
  </head>
 <body>
+
+<div id="grass_green" class="box-grass"></div>
+<div id="grass_grey" class="box-grass"></div>
 
 <div class="reveal">
 <div class="slides">
 
 <section>
 <h1><b>ABAP in the wild!</b></h1>
-Open Source Summit SAP Germany 2020
+SAP Open Source Summit 2020<br>
+<br>
+<br>
+<br>
+<br>
 </section>
 
 <section>people</section>
@@ -37,6 +45,7 @@ Open Source Summit SAP Germany 2020
 
 </div>
 </div>
+<script src="grass.js"></script>
 <script src="ext/reveal.js-3.9.2/js/reveal.js"></script>
 <script>
 Reveal.initialize({
@@ -44,6 +53,8 @@ Reveal.initialize({
   slideNumber: true,
   dependencies: []
 });
+Reveal.addEventListener('ready', squaresSlideReady);
+Reveal.addEventListener('slidechanged', squaresSlideChanged);
 </script>
 </body>
 </html>
