@@ -24,3 +24,7 @@ body {
   width: 100vw;
   z-index: +10;
 }
+
+.reveal section img {
+  background: unset;
+}
