@@ -17,6 +17,10 @@ body {
   text-transform: none;
 }
 
+.reveal h3 {
+  text-transform: none;
+}
+
 .box-grass {
   position: fixed;
   bottom: 0px;
@@ -27,4 +31,8 @@ body {
 
 .reveal section img {
   background: unset;
+}
+
+.reveal table th, .reveal table td {
+  border-bottom: unset;
 }

@@ -6,8 +6,11 @@
   <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAYSBwAAJAAAACTAAAIhAkAAJkAAACcAAADmAMAAJ8AAAefCAAAcwAAAKUAAAB2AAAVWRcAAKgAABlDGwAAqwAAAHwAAAB/AAAAggAAAIUAABk9HAAAtwAAAIgAAAC6AAAAiwAAAL0AAACOAAAAkQAAAJQAABpMHAAAlwAAB3oHAAVyBQAAnQAAAKAAAACjAAAAdAAAAKYAAACpAAAAegAAAKwAAAB9AAAPfRAAAK8AAACAAAASWBUAALUAAAC4AAAAiQAAALsAAACMAAAAjwAAA4sDAACSAAAiKSYAAJUAABdUGQAAmAAAAJsAAACeAAAAoQAAAHIAABVVFwAApAAAAHUAAAhjCQAApwAAAHgAACAwJAAArQAAAH4AABtHHgAAswAAAIQAAAC2AAAAhwAAALkAAACKAAAAvAAAAI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhAQLi4vMjJNMk8CM0kuRTIHKUpKL0saGE8aMzMLSiwBN0YVCkwwARgaGjMzQxISHAQ9Lz1MGDUyMzMzMykTNzkhCUw2FgRCMjMBNRsySzcFPEBMNgkdDU8BAT4eM003IgoCFzYkKiYfNRs2BTU3NiM4ITE2HEE2JgQ1NiE3NzZCNjxOFB4LLSg2NUQ7ORs2DzY/GUMENjY2NgI7IToCNis2QicnOjY2Nis0Ng47NzZINg82JzY2NjY2AAYDIjk2FTZHNhA2NjY2NjY2NiMMNgg2NjYpNjY2NjY2NjYlQjY2NjY2IDY2NjY2NjY2NiY2NjY2NjYRNjY2NjY2NjYoNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
   <title>ABAP in the wild!</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js" integrity="sha256-MCvBrhCuX8GNt0gmv06kZ4jGIi1R2QNaSkadjRzinFs=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/v4-shims.min.css" integrity="sha256-wN7QJaqAwQ03kgUhyN4EU2phRdDkLrQYbFe0EvpQ60U=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="ext/reveal.js-3.9.2/css/reveal.css">
   <link rel="stylesheet" href="ext/reveal.js-3.9.2/css/theme/black.css">
+  <link rel="stylesheet" href="ext/octicons/octicons.css">
 	<link rel="stylesheet" href="style.css">
  </head>
 <body>
@@ -28,19 +31,26 @@ SAP Open Source Summit 2020<br>
 </section>
 
 <section>
-Andre Becker, @myBecks
-SAP SE
-
-Lars Hvam, @LarsHvam
-INVIXO Consulting
+Andre Becker, <a href="https://twitter.com/myBecks"><i class="fa fa-twitter plain"></i> @myBecks</a><br>
+<a href="https://sap.com">SAP SE</a><br>
+<br>
+Lars Hvam, <a href="https://twitter.com/LarsHvam"><i class="fa fa-twitter plain"></i> @LarsHvam</a><br>
+<a href="https://invixo.com">INVIXO Consulting</a><br>
 </section>
 
 <section>
-house rules => free chat? open for questions in the beginning, answer if time permits?
+<h1>House Rules</h1>
+<table><tr><td>
+Feel free to use the chat<br>
+<br>
+QnA open, will answer questions in the end if time permits<br>
+<br>
+Slides: <a href="https://larshp.github.io/abap-in-the-wild/">https://larshp.github.io/abap-in-the-wild/</a>
+</td></tr></table>
 </section>
 
 <section>
-  <h3>Disclaimer</h3>
+  <h1>Disclaimer</h1>
   <img src="img/const.gif" class="plain">
   <br>
   Open source
@@ -50,14 +60,36 @@ house rules => free chat? open for questions in the beginning, answer if time pe
 </section>
 
 <section>
-  the pioneers
+  <h1>The Pioneers</h1>
   saplink + abap2xlsx
   code exchange
 </section>
 
 <section>
-abapGit
-dotabap.org
+  <img src="img/logo.svg" class="plain"><br>
+  <table>
+  <tr><td><i class="mega-octicon more-mega octicon-calendar"></i></td><td>started ~5 years ago</td></tr>
+  <tr><td><i class="mega-octicon more-mega octicon-git-commit"></i></td><td>~3700 commits</td></tr>
+  <tr><td><i class="mega-octicon more-mega octicon-organization"></i></td><td>87 contributors</td></tr>
+  <tr><td><i class="mega-octicon more-mega octicon-code"></i></td><td>~80000 lines</td></tr>
+  <tr><td><i class="mega-octicon more-mega octicon-versions"></i></td><td>7.02 and up</td></tr>
+  <tr><td><i class="mega-octicon more-mega octicon-credit-card"></i></td><td>MIT License</td></tr>
+  </table>
+  </section>
+
+<section>
+  <h3>abapGit Design Goals</h3>
+  <ul>
+  <li>Easy installation</li>
+  <li>Easy upgrade</li>
+  <li>Small system footprint</li>
+  <li>Code readable in git repository</li>
+  </ul>
+</section>
+
+<section>
+  <h3><a href="https://dotabap.org">https://dotabap.org</a></h3>
+  <iframe width="900" height="500" src="https://dotabap.org/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section>
@@ -103,11 +135,16 @@ CI, serverless, downport + upport
   <a href="https://larshp.github.io/abap-in-the-wild/">https://larshp.github.io/abap-in-the-wild/</a>
   <br>
   <br>
-  <a href="https://twitter.com/myBecks">@myBecks</a><br>
-  <a href="https://twitter.com/LarsHvam">@LarsHvam</a>
+  <a href="https://twitter.com/myBecks">@myBecks</a>, <a href="https://twitter.com/LarsHvam">@LarsHvam</a>
   <br>
   <br>
   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" width="200" class="plain" src="img/by.svg" /></a>
+  <br>
+  <i class="fa fa-sun-o plain"></i>
+</section>
+
+<section>
+  <i class="fa fa-question fa-6x plain"></i>
 </section>
 
 </div>
