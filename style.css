@@ -36,3 +36,13 @@ body {
 .reveal table th, .reveal table td {
   border-bottom: unset;
 }
+
+.reveal pre {
+  box-shadow: unset;
+}
+
+.reveal a:hover img {
+  background: unset;
+  border-color: unset;
+  box-shadow: unset;
+}

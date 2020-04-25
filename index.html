@@ -22,7 +22,7 @@
 <div class="slides">
 
 <section>
-<h1><b>ABAP in the wild!</b></h1>
+<h1>ABAP in the wild!</h1>
 SAP Open Source Summit 2020<br>
 <br>
 <br>
@@ -35,7 +35,7 @@ Andre Becker, <a href="https://twitter.com/myBecks"><i class="fa fa-twitter plai
 <a href="https://sap.com">SAP SE</a><br>
 <br>
 Lars Hvam, <a href="https://twitter.com/LarsHvam"><i class="fa fa-twitter plain"></i> @LarsHvam</a><br>
-<a href="https://invixo.com">INVIXO Consulting</a><br>
+<a href="https://invixo.com">INVIXO</a><br>
 </section>
 
 <section>
@@ -60,9 +60,31 @@ Slides: <a href="https://larshp.github.io/abap-in-the-wild/">https://larshp.gith
 </section>
 
 <section>
-  <h1>The Pioneers</h1>
-  saplink + abap2xlsx
-  code exchange
+<h1>The Pioneers</h1>
+SAP Teched Vegas, 2006, Demo Jam<br>
+
+<img src="img/saplink1.png" height="200em" class="plain">
+<img src="img/saplink2.png" height="200em" class="plain">
+<br>
+Edward Herrmann<br>
+Dan McWeeney
+</section>
+
+<section>
+<h1>abap2xlsx</h1>
+
+<a href="https://blogs.sap.com/2010/07/12/abap2xlsx-generate-your-professional-excel-spreadsheet-from-abap/">Generate your professional Excel spreadsheet from ABAP</a>
+<br>
+<img src="img/abap2xlsx.jpg" class="plain">
+<br>
+<a href="https://twitter.com/IvanFemia">Ivan Femia</a>
+</section>
+
+<section>
+<h1>Code Exchange</h1>
+<a href="https://blogs.sap.com/2013/05/23/code-exchange-20-a-new-and-better-way-to-share-your-code/">Code Exchange 2.0 – Blog Post</a>
+<br>
+<img src="img/code_exchange.png" class="plain">
 </section>
 
 <section>
@@ -164,19 +186,74 @@ Slides: <a href="https://larshp.github.io/abap-in-the-wild/">https://larshp.gith
 
 <section>
 <h2>Lets get wild!</h2>
-
+<table><tr><td valign="top"><pre>REPORT zfib01.
+PARAMETERs: p_n TYPE i DEFAULT 13.
+START-of-SELECTION.
+PERform run.
+DATA: r TYPE i,     b.
+FORM run.
+PERFORM f USING p_n r.
+WRITE r.
+ENDFORM.</pre></td><td><pre>* this form calc fibonac nu
+FORM f USING n r.
+data n1 TYPE i.DATA: n2
+type i.
+data: r1   TYPE p,
+r2 TYPE f.
+CLEAR r1.
+n2 = n - 1. n1 = n2  - 1.
+if n = 1.
+r = n.
+ELSEIF         n:= 2.
+MOVE n TO r.
+SUBTRACT 1 FrOm r.
+ELSE.
+PERFORM f USING: n1
+r2, n2 r1.
+*    PERFORM f USING n2.
+ENDIF . r = r + r1 + r2.
+ENDFORM.</pre></td></tr></table>
 </section>
 
 <section>
-abaplint
-CI, serverless, downport + upport
+<h1>SAP style guide</h1>
+<a href="https://github.com/SAP/styleguides">https://github.com/SAP/styleguides</a>
 </section>
 
 <section>
-  vscode
-  https://github.com/marcellourbani/vscode_abap_remote_fs
-  https://github.com/marcellourbani/abap-adt-api
-  https://github.com/jfilak/sapcli
+<h1>abaplint</h1>
+https://abaplint.org<br>
+Custom everything in Typescript<br>
+continious integration, vscode, ADT, code inspector<br>
+</section>
+
+<section>
+<h1>syntax</h1>
+<a href="https://syntax.abaplint.org/"><img src="img/syntax.svg" class="plain"></a>
+</section>
+
+<section>
+  <h1>rules</h1>
+</section>
+
+<section>
+  <h1>aaand then</h1>
+editor, serverless, downport + upport
+</section>
+
+<section>
+<table><tr>
+<td><a href="https://code.visualstudio.com/"><img src="img/vscode_icon.svg" class="plain" height="50em"></a></td>
+<td><h1>vscode</h1></td>
+</tr></table>
+
+<table><tr><td>
+<a href="https://github.com/marcellourbani/vscode_abap_remote_fs">marcellourbani/vscode_abap_remote_fs</a>
+<br>
+<a href="https://github.com/marcellourbani/abap-adt-api">marcellourbani/abap-adt-api</a>
+<br>
+<a href="https://github.com/jfilak/sapcli">jfilak/sapcli</a>
+</td></tr></table>
 </section>
 
 <section>
@@ -194,6 +271,21 @@ CI, serverless, downport + upport
 
 <section>
   <i class="fa fa-question fa-6x plain"></i>
+</section>
+
+<section>
+<h2>Links</h2>
+<table><tr><td>
+<a href="http://abapgit.org">http://abapgit.org</a><br>
+<a href="https://dotabap.org">https://dotabap.org</a><br>
+<a href="https://abaplint.org">https://abaplint.org</a><br>
+</td></tr></table>
+</section>
+
+<section>
+<h3>Green Green Grass of Home</h3>
+<a href="https://larshp.github.io/animated-backgrounds/src/grass/">https://larshp.github.io/animated-backgrounds/src/grass/</a>
+<iframe width="499" height="377" src="https://www.youtube.com/embed/eibRgTmuVk0?start=47" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 </div>
