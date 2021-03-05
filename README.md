@@ -10,4 +10,3 @@ Open Source Summit SAP Germany 2020
 
 * Andre Becker, [SAP SE](https://www.sap.com)
 * Lars Hvam, [INVIXO Consulting A/S](https://www.invixo.com) & [SAP Mentors](https://community.sap.com/programs/influencer-programs/mentors) Alumni
-
